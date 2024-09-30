@@ -1,0 +1,89 @@
+/* Estilos para a página "Olá Mundo Interativo" */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.container {
+    margin: 10px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #74ebd5;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #74ebd5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #67d0c0;
+}
+
+#greetingMessage {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Animação de fade-in no título */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Reduz o tamanho do título em telas menores */
+    }
+
+    input[type="text"], button {
+        
+        width: 80%; /* Faz o input e botão ocuparem toda a largura disponível */
+        padding: 15px; /* Aumenta o padding para torná-los mais fáceis de tocar */
+    }
+
+    .container {
+        padding: 20px; /* Diminui o padding geral do container */
+    }
+
+    p {
+        font-size: 1em; /* Reduz o tamanho da fonte em parágrafos */
+    }
+}
